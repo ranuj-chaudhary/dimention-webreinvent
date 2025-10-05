@@ -58,7 +58,6 @@ module.exports = {
             transform: "rotate(-360deg)",
           },
         },
-
         "border-spin-slow-clockwise": {
           "0%": {
             opacity: 0.5,
