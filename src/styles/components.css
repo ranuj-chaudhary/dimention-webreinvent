@@ -39,15 +39,21 @@
 
   .circle-biggest {
     box-shadow: 10px 20px 90px 0px #ffffff10 inset;
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     @apply absolute rounded-full xlg:top-2 xlg:w-[148vw] xlg:left-[40%] xlg:h-[148vw] left-1/2 transform overflow-hidden -translate-x-1/2 w-[124vw]  top-0 h-[124vw]  sm:top-0 -z-20;
   }
 
   .circle-bigger {
     filter: blur(40px);
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     @apply absolute w-[124vw] h-[124vw] xlg:top-[12vw] xlg:w-[128vw] xlg:h-[128vw] xlg:left-[40%]  -z-20 top-[25vw] md:top-[24vw] lg:top-[18vw]  rounded-full overflow-hidden;
   }
 
   .circle-bigger-overlay {
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     background: var(--color-brand-primary);
     @apply w-[124vw] h-[124vw] absolute top-[20vw] xlg:w-[128vw]  xlg:left-[40%] xlg:h-[128vw] overflow-hidden rounded-full md:top-[18vw] lg:top-[14vw] xlg:top-[8vw] left-[50%] transform -translate-x-1/2 -z-10;
   }
@@ -55,17 +61,23 @@
   .circle-small {
     overflow: hidden;
     filter: blur(60px);
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     box-shadow: 10px 50px 50px 0px var(--color-brand-primary) inset;
     @apply absolute w-[110vw] h-[110vw]  sm:top-[40vw] border-[0.8px] rounded-full top-[60vw] md:top-[39vw]  lg:top-[32vw] xl:top-[28vw]  xlg:w-[88vw] xlg:h-[88vw] xlg:left-[40%] xlg:top-[22vw] left-1/2 transform -translate-x-1/2 -z-10;
   }
 
   .circle-small-overlay {
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     box-shadow: 10px 20px 90px 0px #ffffff10 inset;
     @apply absolute w-[110vw] h-[110vw] top-[56vw] left-[45%] sm:top-[37vw] md:top-[35vw] lg:top-[28vw] xl:top-[24vw] xlg:w-[72vw] xlg:h-[72vw] xlg:left-[40%] xlg:top-[25vw]  bg-[var(--color-brand-primary)]  rounded-full transform -translate-x-1/2 -z-10 md:left-1/2;
   }
 
   .circle-bigger::before,
   .circle-small::before {
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     background-size: 100% 100%;
     background-position: 0px 0px;
     background-image: conic-gradient(
@@ -77,12 +89,15 @@
   }
 
   .circle-bigger::before {
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-circle-spin-clockwise content-[''];
   }
   .circle-small::before {
+    width: min(124vw, 1500px);
+    height: min(124vw, 1500px);
     @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-circle-spin-anticlockwise content-[''];
   }
-
   /* Background Big Circle Animation Ends */
 
   /* Chat Panel Starts*/
