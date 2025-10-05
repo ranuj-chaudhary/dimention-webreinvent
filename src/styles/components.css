@@ -51,10 +51,13 @@
     background: var(--color-brand-primary);
     @apply w-[124vw] h-[124vw] absolute top-[20vw] xlg:w-[128vw]  xlg:left-[40%] xlg:h-[128vw] overflow-hidden rounded-full md:top-[18vw] lg:top-[14vw] xlg:top-[8vw] left-[50%] transform -translate-x-1/2 -z-10;
   }
+  
 
   .circle-small {
     overflow: hidden;
     filter: blur(60px);
+    top: 600px; /* instead of 60vw */
+    left: 50%;
     box-shadow: 10px 50px 50px 0px var(--color-brand-primary) inset;
     @apply absolute w-[110vw] h-[110vw]  sm:top-[40vw] border-[0.8px] rounded-full top-[60vw] md:top-[39vw]  lg:top-[32vw] xl:top-[28vw]  xlg:w-[88vw] xlg:h-[88vw] xlg:left-[40%] xlg:top-[22vw] left-1/2 transform -translate-x-1/2 -z-10;
   }

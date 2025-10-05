@@ -12,8 +12,8 @@
 
   <!-- Preload fonts -->
   <link rel="preload" href="/assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="/assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin> -->
 
     <!-- Standard favicon -->
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
@@ -108,13 +108,13 @@
           </div>
         </div>
         <!-- Rotation Animation Circles Starts-->
-        <div class="absolute w-[100vw] h-[100vw] top-0 ">
-          <div class="circle-biggest custom-thin-border"></div>
+        <!-- <div class="absolute w-[100vw] h-[100vw] top-0 ">
+          <div class="circle-biggest custom-thin-border "></div>
           <div class="circle-bigger"></div>
           <div class="circle-bigger-overlay custom-thin-border"></div>
           <div class="circle-small"></div>
           <div class="circle-small-overlay"></div>
-        </div>
+        </div> -->
 
         <!-- Rotation Animation Circles Ends-->
       </div>
@@ -723,7 +723,7 @@
 
             <div class="card__image custom-thin-border relative flex min-w-96 h-96 w-full flex-col rounded-md p-1">
               <div class="flex-1 relative w-96 h-36">
-                <img src="assets/images/code_snippet.webp" class="object-contain" alt />
+                <img src="assets/images/code_snippet.webp" class="object-contain" alt="javascript code snippet" loading="lazy" />
                 <!-- Necati -->
 
                 <div
@@ -1259,7 +1259,6 @@
         fadeIn(horizontalStar);
         fadeIn(verticalStar);
 
-        console.log(timerId);
         timerId = setTimeout(() => {
           fadeOut(horizontalStar);
           fadeOut(verticalStar);
