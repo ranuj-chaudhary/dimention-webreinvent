@@ -46,7 +46,6 @@ module.exports = {
     patterns: [
       { from: 'src/images', to: 'images' },
       { from: 'src/styles', to: 'styles' }, // ✅ Copies all CSS files 
-
     ],
   }),
   ],
