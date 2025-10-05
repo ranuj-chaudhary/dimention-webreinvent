@@ -26,10 +26,5 @@
     "webpack": "^5.99.9",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.15.2"
-  },
-  "dependencies": {
-    "imagemin": "^9.0.1",
-    "imagemin-svgo": "^11.0.1",
-    "sharp": "^0.34.4"
   }
 }

@@ -7,9 +7,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: process.env.NODE_ENV === 'production'
-  ? 'bundle.[contenthash].js'
-  : 'bundle.js',
+    filename: 'bundle.[contenthash].js',  
     clean: true,
     publicPath: '/', // Required for Netlify SPA routing
   },
