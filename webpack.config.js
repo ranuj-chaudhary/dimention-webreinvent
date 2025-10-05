@@ -7,7 +7,9 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[contenthash].js',
+    filename: process.env.NODE_ENV === 'production'
+  ? 'bundle.[contenthash].js'
+  : 'bundle.js',
     clean: true,
     publicPath: '/', // Required for Netlify SPA routing
   },
@@ -44,9 +46,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
     patterns: [
-      { from: 'src/images', to: 'images' },
+      { from: 'src/assets'
+        , to: 'assets' },
       { from: 'src/styles', to: 'styles' }, // ✅ Copies all CSS files 
-    ],
+     ],
   }),
   ],
   devServer: {
