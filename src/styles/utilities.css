@@ -1,0 +1,80 @@
+@tailwind utilities;
+
+/* ################# Utilities ##################### */
+
+@layer utilities {
+  /* ################# Borders ##################### */
+
+  /* Border .thin-border */
+  .custom-thin-border {
+    @apply border-[0.8px] border-[#1C1D36];
+  }
+  .table-thin-border {
+    @apply border-[0.5px] border-[#1C1D36];
+  }
+
+  /* ################# Gradients ##################### */
+
+  /* Custom Angle Gradients */
+
+  .linear-gradient-custom-angle {
+    background: var(--btn-linear-gradient-custom-angle);
+  }
+
+  /* Text Gradients */
+
+  .text-gradient-four-colors {
+    background: var(--text-gradient-four-colors);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-five-colors {
+    background: var(--text-gradient-five-colors);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-two-colors {
+    background: var(--text-gradient-two-colors);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /*Background Gradients*/
+
+  .background-gradient-two-colors {
+    background: var(--background-gradient-two-colors);
+  }
+  .background-dark-gradient-two-colors {
+    background: var(--background-dark-gradient-two-colors);
+  }
+
+  .background-gradient-three-colors {
+    background: var(--background-gradient-three-colors);
+  }
+
+  .background-gradient-four-colors {
+    background: var(--background-gradient-four-colors);
+  }
+
+  .bg-linear-custom-angle-purple {
+    background: var(--bg-linear-custom-angle-purple);
+  }
+  .bg-linear-custom-angle-purple-light {
+    background: var(--bg-linear-custom-angle-purple-light);
+  }
+
+  .bg-custom-gradient {
+    background: linear-gradient(
+      119.37deg,
+      #382e5d 32%,
+      rgba(56, 46, 93, 0) 125.36%
+    );
+  }
+  /* Chat Panel */
+  .child\:px-2-py-1 > * {
+    @apply px-6 py-1;
+  }
+}
+/* utilities Ends*/
