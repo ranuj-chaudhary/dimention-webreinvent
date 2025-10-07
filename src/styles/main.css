@@ -1,3 +1,8 @@
+body {
+   width: 100vw;
+  overflow-x: hidden;
+}
+
 /* Keyframes Starts*/
 /*Card Section Spinning Wheel  */
 
@@ -24,6 +29,7 @@
   font-style: normal;
   font-display: swap; 
 }
+
 
 /* Medium */
 /* @font-face {
