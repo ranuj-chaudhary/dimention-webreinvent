@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -66,4 +66,7 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
   },
+   headers: {
+    'Cache-Control': 'public, max-age=31536000, immutable',
+  }
 };
